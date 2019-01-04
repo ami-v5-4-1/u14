@@ -18,7 +18,7 @@ build:
     - packer version
     - terraform --version
     - apt search azure-cli
-    - az --version
+    #- az --version
     - EXPECTED_DOCKER_VERSION="1.13.0"
     - |
       [ $(docker version --format {{.Server.Version}}) == "$EXPECTED_DOCKER_VERSION" ]
